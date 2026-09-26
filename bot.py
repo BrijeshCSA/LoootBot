@@ -496,8 +496,9 @@ def cmd_profil(user_id, peer_id):
         f"🆚Verify: {tt_verified}\n\n"
         f"👀Дата регистрации: {reg_date}"
     )
-    send_message(peer_id, text)
-  def cmd_passport(user_id, peer_id):
+  send_message(peer_id, text)
+
+def cmd_passport(user_id, peer_id):
     user = get_user(user_id)
     user = get_user(user_id)
     if user.get('passport'):
