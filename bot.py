@@ -499,6 +499,7 @@ def cmd_profil(user_id, peer_id):
     send_message(peer_id, text)
   def cmd_passport(user_id, peer_id):
     user = get_user(user_id)
+    user = get_user(user_id)
     if user.get('passport'):
         send_message(peer_id, "У вас уже есть паспорт!")
         return
